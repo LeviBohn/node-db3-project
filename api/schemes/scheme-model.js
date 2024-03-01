@@ -102,7 +102,7 @@ async function findById(scheme_id) { // EXERCISE B
     steps: []
   }
   rows.forEach(row => {
-    if (!row.step_id) {
+    if (row.step_id) {
       result.steps.push({
         step_id: row.step_id,
         step_number: row.step_number,
